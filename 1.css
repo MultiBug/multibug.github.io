@@ -46,4 +46,7 @@ p.thick {font-weight: bold;}
 p.thicker {font-weight: 700;}
 p.normal {font-variant: normal;}
 p.small {font-variant: small-caps;} /* Свойство font-variant позволяет конвертировать ваш шрифт в маленькие заглавные буквы.
-Значениями могут быть установлены normal, small-caps, inherit. */
+Значениями могут быть установлены normal, small-caps, inherit.
+ Не каждый шрифт поддерживает свойство CSS font-variant, так что не забудь его протестировать */
+p.example {color: green;} /* Свойство Color определяет цвет текста. Один метод спецификации цвета текста используется название:
+например red, green, blue. */
