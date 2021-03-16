@@ -37,4 +37,10 @@ p.normal {font-style: normal;}
 p.oblique {font-style: oblique;}
 p.light {font-weight: lighter;}
 p.bold {font-weight: bold;}
-p.bolder {font-weight: bolder;}
+p.bolder {font-weight: bolder;} /* Свойство font-weight управляет толщиной текста. Могут быть установлены значения
+normal (размер по умолчанию), bold, bolder, lighter
+ Если необходимо, можно задать толщину шрифта с помощью числа от 100(тонкий) до 900(жирный).
+ 400 это тоже самое что и normal, а 700 тоже самое что и bold */
+p.light {font-weight: lighter;}
+p.thick {font-weight: bold;}
+p.thicker {font-weight: 700;}
