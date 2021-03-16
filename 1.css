@@ -1,2 +1,5 @@
-p {color: black; background-color: red}
-h1 {color: orange}
+p {color: black; background-color: orange}
+h1 {color: orange;}
+p {color: black; font-size: 130%;}
+#intro {color: black; background-color: orange;}
+.first {font-size: 200%;}
