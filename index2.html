@@ -32,7 +32,6 @@ section - отдельный раздел основного контента
 aside - содержит второстепенный/сопутствующий контент или ссылки
 footer - Информация об авторских правах, политике конфиденциальности, условий пользования и т.п. -->
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
 	<head>
 		<title>Проба пера в HTML5</title>
@@ -47,7 +46,7 @@ footer - Информация об авторских правах, полити
 				autoplay Автоматическое воспроизведение при загрузке страницы
 				loop зацикленность воспроизведения -->
 				<h3>Второстепенный заголовок</h3>
-				<frame draggable="true" border="3"><video height="150" width="300" controls autoplay loop><source src="1.mp4" type="video/mp4"><source src="1.ogg" type="video/ogg">Не играет, сцуко</video></frame>
+				<video height="150" width="300" controls autoplay loop><source src="1.mp4" type="video/mp4"><source src="1.ogg" type="video/ogg">Не играет, сцуко</video>
 			</header>
 			Статус: <progress value="63" max="100" min="0"></progress>
 			<nav>
@@ -58,17 +57,82 @@ footer - Информация об авторских правах, полити
 				</ul>
 			</nav>
 			<article>
-				
 				<h1>Заголовок статьи о жизни и смерти</h1>
+				<svg width="200" height="200"><circle cx="80" cy="80" r="50" fill="red" /> </svg> <!-- cx - центр круга передвигается вправо по экрану,
+				cy - центр круга передвигается вниз по экрану, r - задает радиус, fill - задает цвет нашему кругу, stroke - для создания контуров -->
+				<svg width="200" height="200"><rect width="80" height="80" x="20" y="20" fill="red" /> </svg> <!-- rect - нарисует прямоугольник -->
+				<svg width="200" height="200"><line x1="10" y1="10" x2="40" y2="40" style="stroke: #000000; stroke-linecap: round; stroke-width: 20" /> </svg> <!-- line - нарисует линию -->
+				<br />
+				<svg width="200" height="200"><polyline style="stroke-linejoin: miter; stroke: black; stroke-width: 12; fill: none;" points="50 50, 75 75, 100 50" /> </svg> <!-- polyline рисует фигуры, составленные из нескольких отрезков линий,
+				 Points - координаты ломанной линии. -->
+				<svg height="200" width="200"><ellipse cx="100" cy="50" rx="75" ry="14" style="fill: red" /> </svg> <!-- Элемент <ellipse> пишется так же как и <circle> но
+				можно отдельно задавать координаты горизонтальной и вертикальной осей радиуса эллипса с помощтю rx,ry -->
+				<svg width="200" height="200"><polygon points="50 50, 100 100, 150 0" style="fill: red; stroke: black" /> </svg> <!-- Элемент <Polygon> используется для создавания фигур
+				с не менее, чем тремя сторонами. Элемент polygon стоит особняком, потому что он автоматически замыкать фигуру. -->
 				<section>
 					<h1>Заголовок</h1>
-					<p>некоторый контент</p>
+					<p>некоторый контент</p><br />
+					<svg width="200" height="200">
+						<rect width="75" height="75" fill="red">
+							<animate attributeName="x" from="0" to="300" dur="3s" fill="freeze" repeatCount="2" />
+						</rect>
+					</svg> <!-- анимация в svg - графике создается с помощью элемента <animate>
+					Attributename указывает к какому атрибуту будет применяться анимация
+					From  назначает стартовое значение атрибута
+					to назначает конечное значение атрибута
+					dur назначает длительность анимации
+					fill указывает должно ли значение атрибута вернутьсяк своему первоначальному значению после завершения анимации
+					значения remove сбрасывает значение,  freeze сохраняет значение to
+					Repeatcount назначает количество повторов анимации  -->
+					<br />
+					<svg width="200" height="200">
+						<path d="M 0 0 L100 100 L100 0 Z" style="stroke:#000 ; fill: none;" />
+					</svg> <!-- Элемент <path> используется для указания траектории
+					С элементом path можно использовать следующие команды:
+					M moveto
+					L lineto
+					H horizontal lineto
+					V Vertical lineto
+					C curveto
+					S smooth curveto
+					Q Quadratic Bezier curve
+					T smooth quadratic bezier curveto
+					A elliptical Arc
+					Z closepath
+					Во всех вышеперечисленных кома ндах также могут использоваться строчные буквы
+					Заглавные буквы назначают абсолютное положение, буквы в нижнем регистре назначают относительное положение -->
+					<form>
+						<label>Ваше Имя:</label>
+						<input id="user" name="username" type="text" autofocus /> <br />
+						<label for="email">Ваш электронный адрес:</label>
+						<input type="text" name="email" placeholder="email@example.com" />
+					</form>
+					<form autocomplete="off">
+						<label for="email">Ваш электронный адрес:</label>
+						<input name="Email" type="text" required />
+						<input type="submit" value="submit" />
+					</form>
+				<form>
+					<input id="mysearch" name="searchitem" type="search" />
+				</form>
+					<form>
+						<input id="car" type="text" list="colors" />
+						<datalist id="colors">
+							<option value="Red">
+							<option value="Grenn">
+							<option value="Yellow">
+						</datalist>
+					</form>
+					<form>
+						<input id="email" name="email" type="email" placeholder="example@example.com" />
+						<input id="url" name="url" type="url" placeholder="example.com" />
+						<input id="tel" name="tel" placeholder="555.555.1211" />
+					</form>
 				</section>
 				<aside>
 					<p>Доставка в течение 24 часа</p>
 				</aside>
 			</article>
 			<footer align="right"><audio autoplay src="1.mp3" controls>Не играет, сцуко</audio></footer>
-
 		</body>
 </html>
