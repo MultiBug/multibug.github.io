@@ -44,3 +44,6 @@ normal (размер по умолчанию), bold, bolder, lighter
 p.light {font-weight: lighter;}
 p.thick {font-weight: bold;}
 p.thicker {font-weight: 700;}
+p.normal {font-variant: normal;}
+p.small {font-variant: small-caps;} /* Свойство font-variant позволяет конвертировать ваш шрифт в маленькие заглавные буквы.
+Значениями могут быть установлены normal, small-caps, inherit. */
