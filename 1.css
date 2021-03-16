@@ -64,4 +64,9 @@ p.center {text-align: center;}  /* Свойство text-align определя�
 td.top {vertical-align: top;}
 td.middle {vertical-align: middle;}
 td.bottom {vertical-align: bottom;} /* Свойство vertical-align устанавливает вертикальное положение элемента.
-Используемыми значениями являются top, middle, bottom. */
+Используемыми значениями являются top, middle, bottom.
+ Свойство vertical-align также принимает следуюшие значения: baseline, sub, super, %(проценты), px(пиксели) (pt,cm(сантиметры)) */
+span.baseline {vertical-align: baseline;}
+span.sub {vertical-align: sub;}
+span.super {vertical-align: super;}
+span.pixel {vertical-align: -10px;}
