@@ -17,7 +17,9 @@ p.cursive {font-family: Florence, cursive;}
 p.fantasy {font-family: Blippo, fantasy;}
 p.small {font-size: small;}
 /* Свойство font-size устанавливает размер шрифта. Одним из способов установки размера шрифта является использование ключевых слов.
-Например: xx-small, small, medium, large, larger, и т.д. */
+Например: xx-small, small, medium, large, larger, и т.д. Ключевые слова полезны, если вы не хотите, чтобы пользователь мог увеличить размер шрифта,
+потому что это может неблагоприятно сказаться на внешнем виде вашего сайта.
+Так же можно использовать числовые значения в пикселях или ем для управления размером шрифта.*/
 p.medium {font-size: medium;}
 p.large {font-size: large;}
 p.xlarge {font-size: x-large;}
