@@ -30,4 +30,8 @@ h1 {font-size: 1.25em;}
 p.medium {font-size: medium;}
 p.large {font-size: large;}
 p.xlarge {font-size: x-large;}
-p.italic {font-style: italic;} /* Свойство font-style обычно используется для применения курсивного начертания к тексту */
+p.italic {font-style: italic;} /* Свойство font-style обычно используется для применения курсивного начертания к тексту
+ Свойство font-style имеет три значения: normal, italic, oblique.
+ Oblique (наклонный шрифт) очень похож на курсив, но является менее поддерживаемым*/
+p.normal {font-style: normal;}
+p.oblique {font-style: oblique;}
