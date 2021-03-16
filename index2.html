@@ -30,12 +30,19 @@ nav - содержит навигационную секцию веб-сайта
 article - основной контент веб-страницы
 section - отдельный раздел основного контента
 aside - содержит второстепенный/сопутствующий контент или ссылки
-footer - Информация об авторских правах, политике конфиденциальности, условий пользования и т.п. -->
+footer - Информация об авторских правах, политике конфиденциальности, условий пользования и т.п.
+ Каскадирование
+ Итоговый вид веб страницы является результатом различных правил. Тремя главными источниками информации о стиле,
+ которые формируют каскад, являются:
+ -Таблица стилей, созданная автором страницы
+ -Стандартные стили браузера
+ -Стили, определенные пользователем
+ CSS расшифровывается как Каскадные таблицы стилей-->
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<style> p {color: red; background-color: black;} </style> <!-- Вложенные стили определяются с помощью элемента <style>,
+		<!--<style> p {color: red; background-color: black;} </style> --><!-- Вложенные стили определяются с помощью элемента <style>,
 		внутри секции head HTML страницы.
 		 Внутренняя таблица стилей может использоваться, если один документ имеет уникальное оформление. -->
 		<title>Проба пера в HTML5 и CSS</title>
@@ -50,6 +57,14 @@ footer - Информация об авторских правах, полити
 				autoplay Автоматическое воспроизведение при загрузке страницы
 				loop зацикленность воспроизведения -->
 				<h3>Второстепенный заголовок</h3>
+				<p class="serif">This is paragraph shown in Serif font</p><!-- Свойство Font-Family определяет шрифт элемента.
+				Существует два типа имен семейств шрифтов:
+				-Font Family: специфическое семейство шрифтов (как Times New Roman или Arial)
+				-Generic Family: группа подобных семейств шрифтов (как Serif или Monospace) -->
+				<p class="sansserif">This is paragraph shown in Sans-Serif font</p>
+				<p class="monospace">This is paragraph shown in MonoSpace font</p>
+				<p class="cursive">This is paragraph show in Cursive font</p>
+				<p class="fantasy">This is paragraph show in Fantasy font</p>
 				<video height="150" width="300" controls autoplay loop><source src="1.mp4" type="video/mp4"><source src="1.ogg" type="video/ogg">Не играет, сцуко</video>
 			</header>
 			Статус: <progress value="63" max="100" min="0"></progress>

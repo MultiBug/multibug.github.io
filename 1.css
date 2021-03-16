@@ -1,6 +1,13 @@
-p {color: black; background-color: orange}
+/* p {color: black; background-color: orange}
 h1 {color: orange;}
 p {color: black; font-size: 130%;}
 #intro {color: black; background-color: orange;}
 .first {font-size: 200%;}
-em {color: aqua; background-color: brown;}
+em {color: aqua; background-color: brown;} */
+p.serif{font-family:"Times New Roman", Times, serif;}
+/* Разделяй каждое значение запятой чтобы указать, что они являются альтернативными.
+Если имя семейства шрифта содержит более одного слова, то оно должно быть указано в кавычках "Times New Roman"  */
+p.sanserif {font-family: Halvetica, Arial, sans-serif;}
+p.monospace {font-family: "Courier New", Courier, monospace;}
+p.cursive{font-family:Florence,cursive;}
+p.fantasy {font-family: Blippo, fantasy;}
