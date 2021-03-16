@@ -15,3 +15,9 @@ p.sanserif {font-family: Halvetica, Arial, sans-serif;}
 p.monospace {font-family: "Courier New", Courier, monospace;}
 p.cursive {font-family: Florence, cursive;}
 p.fantasy {font-family: Blippo, fantasy;}
+p.small {font-size: small;}
+/* Свойство font-size устанавливает размер шрифта. Одним из способов установки размера шрифта является использование ключевых слов.
+Например: xx-small, small, medium, large, larger, и т.д. */
+p.medium {font-size: medium;}
+p.large {font-size: large;}
+p.xlarge {font-size: x-large;}
