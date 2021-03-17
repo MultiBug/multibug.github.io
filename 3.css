@@ -41,4 +41,4 @@ p.ridge {border-style: ridge;}
 p.inset {border-style: inset;}
 p.outset {border-style: outset;}
 p.hidden {border-style: hidden;}
-div {border: 5px solid green; width: 90px; height: 90px;}
+div {border: 5px solid green; width: 90px; height: 120px;}
