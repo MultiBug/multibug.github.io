@@ -101,4 +101,7 @@ h1 {font-size: 30pt; text-shadow: rgba (0,0,255,1) -1px -2px 0.5em}
 (как px,cm,mm,in,pc,pt) Отрицальные значения также доступны для использования.
 Браузер IE версии 9 и старше не поддерживает свойство text-shadow */
 p.capitalize {text-transform: capitalize;} /* CSS свойство text-transform определяет регистр текста.
-Например можно сделать каждое слово в тексте с заглавной буквы.
+Например можно сделать каждое слово в тексте с заглавной буквы. Используя свойство text-transform,
+вы можете изменить регистр всего текста на нижний или верхний.Значение none не меняет регистр символов. */
+p.uppercase {text-transform: uppercase;}
+p.lowercase {text-transform: lowercase;}
