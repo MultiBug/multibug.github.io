@@ -105,3 +105,9 @@ p.capitalize {text-transform: capitalize;} /* CSS свойство text-transfor
 вы можете изменить регистр всего текста на нижний или верхний.Значение none не меняет регистр символов. */
 p.uppercase {text-transform: uppercase;}
 p.lowercase {text-transform: lowercase;}
+p.normal {letter-spacing: normal;}
+p.positive {letter-spacing: 4px;} /* Свойство letter-spacing определяет расстояние между символами в тексте.
+Значениями могут быть:
+normal - определяет стиль по умолчанию, без дополнительного расстояния между символами
+length - определяет дополнительное расстояние между символами, с помощью единиц измерения px,pt,cm,em
+inherit - наследует значение родителя
