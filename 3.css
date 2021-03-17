@@ -48,7 +48,8 @@ p.ridge {border-style: ridge;}
 p.inset {border-style: inset;}
 p.outset {border-style: outset;}
 p.hidden {border-style: hidden;}
-div {border: 5px solid green; width: 100%; height: 25px;}
+div {border: 5px solid green; width: 100%; height: 25px; background-color: darkorange;}
 p.first {border: 5px solid darkred; min-height: 100px;}
 p.second {border: 5px solid darkred; max-width: 100px;}
 body {background-color: #87CEFA;}
+p {background-color: lightgreen;}
