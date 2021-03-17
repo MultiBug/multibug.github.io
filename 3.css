@@ -35,6 +35,7 @@ max-width - макс ширина
 max-height - макс высота
 Свойство background-color используется для установки фонового цвета элемента
 Свойство background-image устанавливает одно или несколько фоновое изображений в элементе.
+По умолчанию, фоновое изображение размещается в левом верхнем углу элемента и повторяется вертикально и горизонтально, чтобы покрыть весь элемент.
  */
 p {padding: 10px; border: 5px solid darkred;}
 p.first {padding: 10px; border-style: solid; border-width: 2px; border-color: firebrick;}
@@ -52,5 +53,5 @@ p.hidden {border-style: hidden;}
 div {border: 5px solid green; width: 100%; height: 25px; background-color: darkorange;}
 p.first {border: 5px solid darkred; min-height: 100px;}
 p.second {border: 5px solid darkred; max-width: 100px;}
-body {background-color: #87CEFA; background-image: url("tree.jpg")}
+body {background-color: #87CEFA; background-image: url("542976.png")}
 p {background-color: lightgreen;}
