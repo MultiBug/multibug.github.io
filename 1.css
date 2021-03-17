@@ -73,7 +73,7 @@ span.baseline {vertical-align: baseline;}
 span.sub {vertical-align: sub;}
 span.super {vertical-align: super;}
 span.pixel {vertical-align: -10px;}
-.main {height: 150px; width: 400px; background-color: black; display: inline-table;}
+.main {height: 150px; width: 400px; background-color: darkred; display: inline-table;}
 .paragraph {display: table-cell; vertical-align: middle;}
 p.none {text-decoration: none;}
 p.inherit {text-decoration: inherit;}
