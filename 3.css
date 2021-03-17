@@ -28,6 +28,11 @@ dotted(точечный), dashed (пунктирный), double (двойной)
 border-top-style (стиль верхней рамки), border-right-style (стиль правой рамки), border-bottom-style (стиль нижней рамки), border-left-style (стиль левой рамки)
 Определение ширины и Высоты в CSS
 Ширина и высота элемента может быть также присвоена с помощью использования процентов.
+Для того чтобы установить минимальную и максимальную высоту и ширину элемента, вы можете использовать следующие свойства:
+min-width - минимум ширина
+min-height - минимум высота
+max-width - макс ширина
+max-height - макс высота
  */
 p {padding: 10px; border: 5px solid darkred;}
 p.first {padding: 10px; border-style: solid; border-width: 2px; border-color: firebrick;}
@@ -43,3 +48,5 @@ p.inset {border-style: inset;}
 p.outset {border-style: outset;}
 p.hidden {border-style: hidden;}
 div {border: 5px solid green; width: 100%; height: 25px;}
+p.first {border: 5px solid darkred; min-height: 100px;}
+p.second {border: 5px solid darkred; max-width: 100px;}
