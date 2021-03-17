@@ -79,11 +79,14 @@ p.none {text-decoration: none;}
 p.inherit {text-decoration: inherit;}
 p.overline {text-decoration: overline;}
 p.underline {text-decoration: underline;}
-p.line-trought {text-decoration: line-through;} /* Свойство text-decoration определяет, как будет докорирован текст.
+p.line-trought {text-decoration: line-through;}
+p.blink {text-decoration: blink;}/* Свойство text-decoration определяет, как будет докорирован текст.
 Наиболее часто используемые значения:
 none - Значение по умолчанию, определяет нормальный текст
 inherit - Наследует это свойство от родительского элемента
 overline - Рисует горизонтальную линию над текстом
 underline - Рисует горизонтальную линию под текстом
 line-thought - рисует горизонтальную линию сквозь текст (заменяет HTML тег <s>)
-Можно комбинировать значения: underline, overline,line-thought указывая их через пробел, чтобы добавить несколько линий. */
+Можно комбинировать значения: underline, overline,line-thought указывая их через пробел, чтобы добавить несколько линий.
+ Другим значением свойства text-decoration является blink которое заставляет текст мигать,
+ данное значение является доступным, но не рекомендуется к использованию, поэтому большинство браузеров его игнорируют*/
