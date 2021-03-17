@@ -55,3 +55,4 @@ p.first {border: 5px solid darkred; min-height: 100px;}
 p.second {border: 5px solid darkred; max-width: 100px;}
 body {background-color: #87CEFA; background-image: url("542976.png")}
 p {color: aqua; background-image: url("tree.jpg"); padding: 40px}
+div {border: 5px solid darkred; width: 200px; height: 200px; background-image: url("tree.jpg")}
