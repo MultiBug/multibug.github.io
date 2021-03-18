@@ -87,6 +87,11 @@ a:hover - активизируется, когда курсор мыши нах�
 При утсановке стиля для нескольких состояний ссылки, существуют некоторые правила:
 a:hover ДОЛЖНО следовать после a:link,a:visited
 a:active Должно следовать после a:hover
+По умолчанию, ссылки подчеркиваются браузером.
+Одним из наиболее общих использований CSS к ссылкам является удаление нижнего подчеркивания.
+text-decoration: none
+CSS позволяет вам установить желаемый стиль курсора при проведении мышкой над элементом
+<span style="cursor:help;">text</span>
  */
 p {padding: 10px; border: 5px solid darkred;}
 p.first {padding: 10px; border-style: solid; border-width: 2px; border-color: firebrick;}
@@ -109,7 +114,7 @@ div {border: 5px solid darkred; width: 200px; height: 200px; background-image: u
 ol.lower-alpha {list-style-type: lower-alpha;}
 ul.circle {list-style-type: circle;}
 ul.square {list-style-type: square;}
-body {background-image: url("542976.png"); background-repeat: no-repeat; background-attachment: fixed;}
+body {background-image: url("542976.png"); background-repeat: no-repeat; background-attachment: fixed; text-shadow: 5px 2px 4px darkred; font-style: italic;}
 ul {list-style-image: url("001.jpg"); list-style-position: inside;}
 table {border-collapse: separate/*collapse*/; border-spacing: 20px 40px; empty-cells: hide; width: 100%; border: 3px solid darkred;}
 caption {caption-side: top;}
@@ -117,3 +122,4 @@ td {border: 1px solid darkred;}
 table.auto {table-layout: auto;}
 table.fixed {table-layout: fixed;}
 a.hover {color: darkred;}
+a:link {text-decoration: none;}
