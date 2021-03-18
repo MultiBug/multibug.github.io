@@ -70,6 +70,7 @@ list-style-image и list-style-position. Оно используется для 
 Вид HTML таблиц может быть улучшен с помощью CSS
 Свойство border-collapse определяет, будет ли рамка таблицы объдинена в одну линию, или у каждой ячейки будет своя рамка.
 Если рамки разделены, то может быть использовано свойство border-spacing для изменения расстояния между границами ячеек в таблице.
+Свойство caption-side определяет положение заголовка таблицы. Значениями могут быть установлены top, bottom.
  */
 p {padding: 10px; border: 5px solid darkred;}
 p.first {padding: 10px; border-style: solid; border-width: 2px; border-color: firebrick;}
@@ -94,4 +95,5 @@ ul.circle {list-style-type: circle;}
 ul.square {list-style-type: square;}
 body {background-image: url("542976.png"); background-repeat: no-repeat; background-attachment: fixed;}
 ul {list-style-image: url("001.jpg"); list-style-position: inside;}
-table {border-collapse: separate; border-spacing: 20px 40px; border-color: darkred}
+table {border-collapse: /*separate*/collapse; border-spacing: 20px 40px; border-color: darkred}
+caption {caption-side: top;}
