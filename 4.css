@@ -1,2 +1,4 @@
 div.floating {float: right;}
 p {clear: right;}
+div.blue {background-color: #8EC4d0; margin-bottom: 15px; width: 120px; height: 120px; color: #FFF;}
+div.red {background-color: #FF4D4D; position: relative; width: 120px; height: 120px; color: #FFF; margin-top: -50px; margin-left: 50px;}
