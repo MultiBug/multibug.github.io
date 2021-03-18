@@ -84,3 +84,4 @@ div {border: 5px solid darkred; width: 200px; height: 200px; background-image: u
 ol.lower-alpha {list-style-type: lower-alpha;}
 ul.circle {list-style-type: circle;}
 ul.square {list-style-type: square;}
+body {background-image: url("542976.png"); background-repeat: no-repeat; background-attachment: fixed;}
