@@ -79,8 +79,8 @@ p.hidden {border-style: hidden;}
 div.out {border: 5px solid green; width: 100%; height: 25px; background-color: darkorange;}
 p.first {border: 5px solid darkred; min-height: 100px;}
 p.second {border: 5px solid darkred; max-width: 100px;}
-body {background-color: #87CEFA; background-image: url("14.jpg"); background-repeat: no-repeat; background-attachment: fixed; color: azure;}
-p {padding: 40px; color: azure} /* color: aqua; background-image: url("tree.jpg") */
+body {color: aqua background-image: url("14.jpg"); background-repeat: no-repeat; background-attachment: fixed;}
+p {padding: 40px;} /* color: aqua; background-image: url("tree.jpg") */
 div {border: 5px solid darkred; width: 200px; height: 200px; background-image: url("tree.jpg")}
 ol.lower-alpha {list-style-type: lower-alpha;}
 ul.circle {list-style-type: circle;}
