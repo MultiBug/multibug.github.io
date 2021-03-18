@@ -165,3 +165,4 @@ a.hover {color: darkred;}
 a:link {text-decoration: none;}
 p.position_static {position: static; top: 30px; right: 5px; color: darkred;}
 p.position_fixed {position: fixed; top: 30px; right: 5px; color: darkred;}
+img {float: right;}
