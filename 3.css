@@ -61,11 +61,19 @@ ordered lists (упорядоченные списки) (<ol>) - элемент�
 В CSS, списки могут быть стилизованы дальше, а изображения могут использоваться в качестве элементов списка.
 Одним из способов является использование свойства list-style-type, которое может быть установлено на circle, square,decimal, disc, lower-alpha, и т.д.
 Некоторые значения служат для неупорядоченных списков, а некоторые для упорядоченных.
-
+Существует также и другие свойства для списков, например:
+list-style-image - устанавливает изображение в качестве маркера списка
+list-style-position - устанавливает, как будет размещаться маркер относительно текста (внутри, снаружи)
+lidt-style-position: outside является значением по умолчанию
+Свойство list-style это универсальное свойство для установки list-style-type,
+list-style-image и list-style-position. Оно используется для установки всех трех свойств в одном объявлении.
+Вид HTML таблиц может быть улучшен с помощью CSS
+Свойство border-collapse определяет, будет ли рамка таблицы объдинена в одну линию, или у каждой ячейки будет своя рамка.
+Если рамки разделены, то может быть использовано свойство border-spacing для изменения расстояния между границами ячеек в таблице.
  */
 p {padding: 10px; border: 5px solid darkred;}
 p.first {padding: 10px; border-style: solid; border-width: 2px; border-color: firebrick;}
-p.second {padding: 10px; border-style: solid; border-width: 5px; border-color: #000000;}
+p.second {padding: 10px; border-style: solid; border-width: 5px; border-color: darkred;}
 p.third {padding: 10px; border-style: solid; border-width: 2px; border-color: RGB(0,153,0);}
 p.none {border-style: none;}
 p.dotted {border-style: dotted;}
@@ -76,7 +84,7 @@ p.ridge {border-style: ridge;}
 p.inset {border-style: inset;}
 p.outset {border-style: outset;}
 p.hidden {border-style: hidden;}
-div.out {border: 5px solid green; width: 100%; height: 25px; background-color: darkorange;}
+div.out {border: 5px solid darkred; width: 100%; height: 25px;}
 p.first {border: 5px solid darkred; min-height: 100px;}
 p.second {border: 5px solid darkred; max-width: 100px;}
 p {padding: 40px;} /* color: aqua; background-image: url("tree.jpg") */
@@ -85,3 +93,5 @@ ol.lower-alpha {list-style-type: lower-alpha;}
 ul.circle {list-style-type: circle;}
 ul.square {list-style-type: square;}
 body {background-image: url("542976.png"); background-repeat: no-repeat; background-attachment: fixed;}
+ul {list-style-image: url("001.jpg"); list-style-position: inside;}
+table {border-collapse: separate; border-spacing: 20px 40px; border-color: darkred}
