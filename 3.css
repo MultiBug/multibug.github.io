@@ -147,4 +147,5 @@ table.auto {table-layout: auto;}
 table.fixed {table-layout: fixed;}
 a.hover {color: darkred;}
 a:link {text-decoration: none;}
-p.position_static {position: static; top: 30px; right: 5px; color: darkred}
+p.position_static {position: static; top: 30px; right: 5px; color: darkred;}
+p.position_fixed {position: fixed; top: 30px; right: 5px; color: darkred;}
