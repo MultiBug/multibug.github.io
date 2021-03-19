@@ -59,6 +59,15 @@ HSL (Hue(тон), Saturation(насыщеность), Lightness(Светлота
 Значения offset-x, offset-y обязательны для использования свойства text-shadow.
 Значение color не является обязательным, но с тех пор, как значение по усолчанию стало
 прозрачным, то тень не появится, пока не укажешь значение цвета.
+Псевдоклассы начинаются с ":" наиболее часто используемые псевдоклассами являются
+:first-child, :last-child
+Псевдокласс :first-child находит любой элемент элемент, являющийся первым в своем родителе.
+Псевдоэлементы:
+::first-line - первая строка селектора
+::first-letter - первая буква текста в селекторе
+::selection - выбирает часть текста, которая указана пользователем
+::before - вставляет некоторое содержимое до элемента
+::after - вставляет некоторое содержимое после элемента
  */
 p.border-radius {position:fixed; border-radius: 20px; background-color: darkred; color: black;}
 /* p.border-radius {position: fixed; border-radius: 0 0 20px 20px; background-color: darkred; color: black;} */
@@ -75,7 +84,7 @@ div.box {
     font-size: small; text-align: center;
 }
 
-div#bs {
+#bs {
     width: 210px; height: 60px;
     background-color: darkred; color: red;
     box-shadow: 0 0 10px 4px #FF6347, 0 0 10px 30px #FFDAB9, 30px 0 20px 30px #B0E0E6;
@@ -114,4 +123,30 @@ nav ul li a {
 h1 {
     text-shadow: 5px 10px 2px #93968f, -3px 6px 5px #58d1e3;
     text-align: center; font-style: italic; color: darkred;
+}
+#parent p:first-child {
+    color: darkred;
+    text-decoration: underline;
+}
+#parent p:last-child {
+    color: darkred;
+    text-decoration: darkred;
+}
+#parent {
+    font-style: italic;
+    font-size: 150%;
+    text-align: center;
+}
+p::first-line {
+    color: white;
+}
+.paragraph2::selection {
+    background-color: red;
+    color: white;
+}
+p {
+    width: 210px;
+    height: 100px;
+    border: 1px solid #000000;
+    word-wrap: break-word;
 }
