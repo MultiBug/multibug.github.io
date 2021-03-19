@@ -40,6 +40,25 @@ Firefox (-moz-); Safari, Chrome (-webkit-); Opera (-o-), IE (-ms)
 Можно одновременно создать inner(внутреннюю) и outer(внешнюю) тени, разделяя каждую запятой.
 Можно определить столько теней для одного и того же блока, сколько вы хотите, записав их
 разделенными через запятую.
+Дo CSS3, прозрачные фоновые изображения использовались для создания эффекта прозрачности.
+Новые свойства CSS3 теперь позволяют создать эффект прозрачности намного легче.
+CSS поддерживает названия цветов,шендацатеричные и RGB представления цвета.
+Значение цвета RGBA значит следующее:
+red,green,blue,alpha. Параметром альфа является число, лежащее от 0.0(полностью прозрачный)
+до 1.0(полностью не прозрачный)
+HSL (Hue(тон), Saturation(насыщеность), Lightness(Светлота)).
+Тон это градус на цветовом колесе, варьирующийся от 0 до 360
+0 (или 360) это красный, 120 это зеленый, 240 это синий.
+Насыщенность это процентное значение:
+100% значит полный цвет.
+Светлота также является процентным значением; 0% это темный (черный) и 100% это белый.
+Цветовые значени HSLA являются расширением цветовых значений HSL с альфа-каналом -
+который определяет прозрачность для цвета (также как и в RGBA)
+Свойство text-shadow определяет один и более эффектов тени, разделенных запятыми,
+которые будут применины к текстовому содержимому текущего элемента.
+Значения offset-x, offset-y обязательны для использования свойства text-shadow.
+Значение color не является обязательным, но с тех пор, как значение по усолчанию стало
+прозрачным, то тень не появится, пока не укажешь значение цвета.
  */
 p.border-radius {position:fixed; border-radius: 20px; background-color: darkred; color: black;}
 /* p.border-radius {position: fixed; border-radius: 0 0 20px 20px; background-color: darkred; color: black;} */
@@ -51,14 +70,48 @@ p.circle {
 }
 div.box {
     width: 210px; height: 60px;
-    background-color: darkred; color: black;
+    background-color: darkred; color: red;
     box-shadow: inset 10px 10px 5px #888888, inset -10px -10px 5px #888888;
     font-size: small; text-align: center;
 }
 
 div#bs {
     width: 210px; height: 60px;
-    background-color: darkred; color: black;
+    background-color: darkred; color: red;
     box-shadow: 0 0 10px 4px #FF6347, 0 0 10px 30px #FFDAB9, 30px 0 20px 30px #B0E0E6;
     font-size: small; text-align: center;
+}
+body {
+    background: url("14.jpg"); background-repeat: no-repeat; background-attachment: fixed;
+    text-shadow: 5px 2px 4px darkred; font-style: italic;
+}
+nav {
+    padding: 50px 0;
+    min-width: 500px;
+    text-align: center;
+    font-style: italic;
+}
+nav ul {
+    background: linear-gradient(90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.2) 25%,
+    rgba(255, 255, 255, 0.2) 75%,
+    rgba(255, 255, 255, 0) 100%);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1),
+    inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+nav ul li {
+    display: inline-block;
+}
+nav ul li a {
+    padding: 10px;
+    color: darkred;
+    font-size: 18px;
+    font-family: Arial;
+    text-decoration: none;
+    display: block;
+}
+h1 {
+    text-shadow: 5px 10px 2px #93968f, -3px 6px 5px #58d1e3;
+    text-align: center; font-style: italic; color: darkred;
 }
