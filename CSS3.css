@@ -31,6 +31,11 @@ Firefox (-moz-); Safari, Chrome (-webkit-); Opera (-o-), IE (-ms)
 -Цвет тени (значение опционально)
 Для установки цвета, находятся два также опциональных значения для элемента box-shadow,
 которыми являются blur (размытие), spread (растяжение).
+Отрицательные значения могут также использоваться со свойством box-shadow
+горизонтальное смещение - тень будет слева от блока
+вертикальное смещение - тень будет над блоком
+радиус размытия - отрицательное значение не допустимо
+радиус растяжение - отрицательное значение вызовет сжатие тени
  */
 p.border-radius {position:fixed; border-radius: 20px; background-color: darkred; color: black;}
 /* p.border-radius {position: fixed; border-radius: 0 0 20px 20px; background-color: darkred; color: black;} */
