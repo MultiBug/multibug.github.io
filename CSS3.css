@@ -231,3 +231,20 @@ p {
     border: 4px dotted black; float: left; padding: 20px;
     background-image: url("001.jpg"); background-clip: border-box;
 }
+#border1 {
+    border: 30px solid #99e6e6; width: 200px; position: relative;
+    top: 100px; left: 50px; background-color: #ffd9b3; float: left;
+}
+#border2 {
+    border: 20px solid rgba(0, 0, 0, 0.3);
+    -moz-background-clip: padding-box;
+    background-clip: padding-box; float: left;
+    width: 200px; position: relative; top: 100px; left: 50px;
+    background-color: lightblue; color: red; font-weight: 900;
+}
+#somuchimages {
+    width: 200px; height: 200px; float: left;
+    background-image: url(001.jpg), url(1234.jpeg);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat;
+}
