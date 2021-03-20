@@ -75,6 +75,7 @@ HSL (Hue(тон), Saturation(насыщеность), Lightness(Светлота
 left,right,top,bottom + комбинации (например bottom right)
 угол градиента (вниз, вверх, вправо, влево, вниз и право и т.д.)
 угол 0deg создает гридиент слева-направо, 90deg снизу-вверх
+repeating-linear-gradient() - повторение линейного градиента
  */
 p.border-radius {position:fixed; border-radius: 20px; background-color: darkred; color: black;}
 /* p.border-radius {position: fixed; border-radius: 0 0 20px 20px; background-color: darkred; color: black;} */
@@ -177,4 +178,8 @@ p {
 #angle {
     float: left; width: 300px; height: 100px; margin: 4px; color: #FFF;
     background: -moz-linear-gradient(100deg, aqua, greenyellow, darkred);
+}
+#repeat {
+    float: left; width: 300px; height: 100px; margin: 4px; color: #FFF;
+    background: -moz-repeating-linear-gradient(darkred, greenyellow 20px);
 }
