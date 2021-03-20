@@ -83,6 +83,7 @@ repeating-linear-gradient() - повторение линейного гради
 background: radial-gradient(position, shape or size, color-stops);
 установка формы радикального градиента через параментр shape
 Положение Радиального градиента с background-position
+
  */
 p.border-radius {position:fixed; border-radius: 20px; background-color: darkred; color: black;}
 /* p.border-radius {position: fixed; border-radius: 0 0 20px 20px; background-color: darkred; color: black;} */
@@ -205,4 +206,8 @@ p {
 #percentages {
     float: left; width: 200px; height: 150px; color: #FFF;
     background: -moz-radial-gradient(aqua 5%, greenyellow 15%, darkred 60%);
+}
+#colorstop {
+    float: left; width: 200px; height: 150px; color: #FFF;
+    background: -moz-radial-gradient(circle, aqua 40%, greenyellow 50%, darkred 70%);
 }
