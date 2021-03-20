@@ -227,3 +227,7 @@ p {
     border: 8px dotted black; float: left; padding: 20px;
     background: lightcoral; background-clip: border-box;
 }
+#backimage {
+    border: 4px dotted black; float: left; padding: 20px;
+    background-image: url("001.jpg"); background-clip: border-box;
+}
