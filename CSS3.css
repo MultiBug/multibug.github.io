@@ -211,3 +211,7 @@ p {
     float: left; width: 200px; height: 150px; color: #FFF;
     background: -moz-radial-gradient(circle, aqua 40%, greenyellow 50%, darkred 70%);
 }
+#backsize {
+    float: left; height: 150px; width: 200px; border: 1px solid #000;
+    background: url("tree.jpg") no-repeat 50% 50%; background-size:/*100px 100px*/ /*contain*/cover;
+}
