@@ -76,6 +76,13 @@ left,right,top,bottom + комбинации (например bottom right)
 угол градиента (вниз, вверх, вправо, влево, вниз и право и т.д.)
 угол 0deg создает гридиент слева-направо, 90deg снизу-вверх
 repeating-linear-gradient() - повторение линейного градиента
+для создания радиального градиента вам необходимо по меньшей мере определить две
+остановки цвета.
+Радиальный градиент определяется с помощью его центра.
+Синтаксис CSS для радиального градиента выглядит следующим образом:
+background: radial-gradient(position, shape or size, color-stops);
+установка формы радикального градиента через параментр shape
+Положение Радиального градиента с background-position
  */
 p.border-radius {position:fixed; border-radius: 20px; background-color: darkred; color: black;}
 /* p.border-radius {position: fixed; border-radius: 0 0 20px 20px; background-color: darkred; color: black;} */
@@ -182,4 +189,20 @@ p {
 #repeat {
     float: left; width: 300px; height: 100px; margin: 4px; color: #FFF;
     background: -moz-repeating-linear-gradient(darkred, greenyellow 20px);
+}
+#elipse {
+    float: left; width: 200px; height: 150px; color: #FFF;
+    background: -moz-radial-gradient(aqua, greenyellow, darkred);
+}
+#circle {
+    float: left; width: 200px; height: 150px; color: #FFF;
+    background: -moz-radial-gradient(circle, aqua, greenyellow, darkred);
+}
+#topleft {
+    float: left; width: 200px; height: 150px; color: #FFF;
+    background: -moz-radial-gradient(top left, aqua, greenyellow, darkred);
+}
+#percentages {
+    float: left; width: 200px; height: 150px; color: #FFF;
+    background: -moz-radial-gradient(aqua 5%, greenyellow 15%, darkred 60%);
 }
