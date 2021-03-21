@@ -1,0 +1,340 @@
+body {
+    background-color:#FFDE89;
+}
+h1 {
+    color:blue;
+    background-color:#FC95FF;
+    font-size:24px;
+    width:340px;
+    text-align:center;
+    height:40px;
+    padding:5px;
+    box-shadow:inset 0 0 6px 5px #00F318,
+    inset 0 0 6px 10px yellow;
+}
+h2 {
+    color:#FF0000;
+    text-align:center;
+    text-shadow:4px 5px 4px #00F318,
+    -2px -5px 8px #A2DC00;
+}
+h3 {
+    color:red;
+    background-color:yellow;
+    border:3px solid Blue;
+    border-radius:4px;
+    box-shadow:1px 1px 5px 5px #00F318;
+    display:inline-block;
+}
+h4 {
+    color:blue;
+    background-color:#21F0B2;
+    border:3px dotted red;
+    border-radius:5px;
+    display:inline-block;
+    text-shadow:3px 3px 5px #00F318;
+}
+h5 {
+    width:300px;
+    height:20px;
+    text-align:center;
+    color:#00F318;
+    margin:-10px 0 0 0;
+    background:-webkit-linear-gradient(120deg ,magenta,black,black,magenta);
+}
+.duration{
+    width:140px;
+    height:150px;
+    color:blue;
+    border:4px dashed red;
+    background:#00F318;
+    transition:height 10s;/*we can use width for this item*/
+}
+.duration:hover{
+    height:70px;
+}
+ul {
+    color:blue;
+}
+.example{
+    color:black;
+    font-size:16px;
+    background-color:#8CFFEC;
+    border:dashed 2px black;
+    font-weight:bolder;
+    box-shadow:0 0 4px 2px magenta;
+}
+h3 samp {
+    font-size:11px;
+    color:red;
+}
+.timing{
+    width:200px;
+    height:80px;
+    color:blue;
+    background-color:cyan;
+    border:4px dotted red;
+    transition-timing-function:cubic bezier(0,0,1,1);
+}/*This Part Not Undertanded For Me*/
+.p-rotate{
+    width:200px;
+    height:140px;
+    color:red;
+    margin:20px 0 20px 40px;
+    border:4px dashed blue;
+    background-color:cyan;
+    transform:rotate(10deg);
+}
+.n-rotate{
+    width:200px;
+    height:140px;
+    color:red;
+    background-color:cyan;
+    margin:20px 0 20px 40px;
+    border:4px dashed    blue;
+    transform:rotate(-10deg);
+}
+.origin{
+    width:80px;
+    height:130px;
+    padding:8px;
+    background-color:#00F318;
+    margin:50px 0 20px 15px;
+    border:4px solid magenta;
+    position:relative;
+    transform:rotate(20deg);
+    transform-origin:10% 80%;
+}
+.empty{
+    width:100px;
+    height:150px;
+    padding:10px;
+    margin:10px 0 20px 5px;
+    border:4px solid blue;
+    position:absolute;
+}
+.without-trans{
+    padding:40px;
+    font-size:14px;
+    position:absolute;
+    border:2px solid black;
+    background-color:#00F318;
+    transform:translate( 0 , 0);
+}
+.with-trans{
+    padding:40px;
+    position:absolute;
+    font-size:14px;
+    border:2px solid black;
+    background-color:#00F318;
+    transform:translate( 150px, 50px);
+}
+.before-skew{
+    width:200px;
+    height:70px;
+    padding:10px;
+    background-color:#00F318;
+    border:4px solid blue;
+}
+.after-skew {
+    width:200px;
+    height:70px;
+    padding:10px;
+    margin:20px 0 20px 70px;
+    background-color:#00F318;
+    border:4px solid blue;
+    transform:skew(30deg);
+}
+.scale-title{
+    color:blue;
+    text-shadow:2px 5px 3px black;
+
+}
+.scale1 {
+    width:300px;
+    height:80px;
+    background-color:cyan;
+    color:red;
+    border:4px dashed blue;
+    word-wrap:break-word;
+}
+.scale2 {
+    width:300px;
+    height:80px;
+    background-color:cyan;
+    color:red;
+    border:4px dashed blue;
+    margin:20px 0 20px 50px;
+    word-wrap:break-word;
+    transform:scale(0.6 , 0.6);
+}
+.multiple-t{
+    width:200px;
+    height:70px;
+    font-size:12px;
+    background-color:#00F318;
+    color:black;
+    margin:30px 0 20px 30px;
+    border:4px dotted blue;
+    transform:rotate(15deg) translate(30px) skew(310deg);
+}
+/*Please edit scew value to more fun styles*/
+.keyframes {
+    width:80px;
+    height:80px;
+    border:4px double black;
+    border-radius:10px;
+    margin:20px 0 20px 40px;
+    background-color:cyan;
+    animation-name:colorchange;
+    animation-delay:3000ms;/*ms = Mili Seconds*/
+    animation-iteration-count:infinite;
+    animation-duration:3s;
+    animation-timing-function:ease-out;
+
+}
+@keyframes colorchange {
+    0% {background-color: #E6FF00 ;}
+    40% {background-color: red ;}
+    70% {background-color: #00F318 ;}
+    100% {background-color: blue ;}
+}
+/*
+@keyframes example{
+    from {background-color: blue ;}
+    to {background-color:#00F318;}
+} This is same result for 40% & 70%*/
+.rect1{
+    width:200px;
+    height:100px;
+    margin:30px 0 30px 50px;
+    border:4px dotted blue;
+    background-color:cyan;
+    position:absolute;
+    transform:rotate(10deg) skew(-30deg);
+    animation-name:darkcolors;
+    animation-duration:4s;
+    animation-timing-function:linear;
+    animation-delay:3000ms;
+    animation-iteration-count:infinite;
+    animation-direction:reverse;
+}
+@keyframes darkcolors{
+    start{background-color:Red;}
+    20%{background-color:#9600B4;}
+    40%{background-color:0000FF;}
+    60%{background-color:#009500;}
+    80%{background-color:#C8097C;}
+    to    {background-color:#010000;}
+}
+.rect2 {
+    width:150px;
+    height:60px;
+    margin:50px 0 50px 74px;
+    border:4px dotted red;
+    background-color:#00F318;
+    position:relative;
+    transform:rotate(-5deg) skew(30deg);
+    animation:lightcolors 1s linear 1s infinite/*iteration-count*/ alternate;
+}
+@keyframes lightcolors{
+    0% {background-color:#FFDD31;}
+    20% {background-color:#6AE744;}
+    40% {background-color:#21EEE0;}
+    60% {background-color:#E83FEE;}
+    80% {background-color:#FFB661;}
+    100% {background-color:#F8B3B2;}
+}
+.X{
+    width:340px;
+    height:100px;
+    border:4px dashed blue;
+    color:red;
+    background-color:cyan;
+    transform:rotateX(1deg);
+    transition:transform 2s ease-in;
+}
+.X:hover{
+    transform:rotateX(724deg);
+}
+.Y{
+    width:340px;
+    height:100px;
+    color:red;
+    background-color:cyan;
+    border:3px dashed blue;
+    transform:rotateY(1deg);
+    transition:transform 2s ease-in;
+}
+.Y:hover{
+    transform:rotateY(724deg);
+}
+.Z{
+    width:340px;
+    height:100px;
+    color:red;
+    margin:125px 0 90px 1px;
+    background-color:cyan;
+    border:3px dashed blue;
+    transform:rotateZ(0deg);
+    transition:transform 2s ease-in;
+}
+.Z:hover{
+    transform:rotateZ(1890deg);
+}
+.trans{
+    width:300px;
+    height:100px;
+    background-color:magenta;
+    color:blue;
+    margin:-10px 0 0 0;
+    border:3px solid green;
+    transform:translateX(30px)
+    translateY(2em)
+    translateZ(-13px);
+    transition:transform 4s ease-in;
+}
+.trans:hover{
+    transform:translateX(130px)
+    translateY(200em)
+    translateZ(-100px);
+}
+.trans2{
+    width:300px;
+    height:100px;
+    background-color:magenta;
+    color:blue;
+    border:4px solid green;
+    transform:translate3d(30px ,2em, 15px );
+    transition:transform 4s ease-in;
+}
+.trans2:hover{
+    transform:translate3d(200px , -2200px  , 335px);
+}
+.angle{
+    width:195px;
+    height:245px;
+    border:4px dashed blue;
+    color:red;
+    margin:26px 20px 20px 51px;
+    position:absolute;
+    background-color:cyan;
+    transform:rotateX(10deg),
+    rotateY(10deg),
+    rotateZ(10deg);
+    transition:transform 6s ease-in;
+}
+.angle:hover{
+    transform:rotateX(496deg)
+    rotateY(890deg)
+    rotateZ(2700deg);
+}
+.none{
+    width:210px;
+    height:260px;
+    border:3px solid black;
+    position:absolute;
+    margin:20px 0 20px 45px;
+    perspective:200px;
+}
+
