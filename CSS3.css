@@ -84,6 +84,13 @@ background: radial-gradient(position, shape or size, color-stops);
 установка формы радикального градиента через параментр shape
 Положение Радиального градиента с background-position
 opacity - прозрачность 0.0 - 1.0
+Переходы в CSS3
+transition-property - указывает свойство, к которомц будет применен переход
+transition-duration - определяет продолжительность, в течение которой произойдет переход
+transition-timing-function - определяет, как будет изменяться темп перехода во время его продолжительности
+transition-delay - определяет задержку (в секундах) для эффекта перехода
+Эффект перехода может быть применен к широкому множеству свойств CSS, включая
+background-color, width, height, opacity.
  */
 p.border-radius {position:fixed; border-radius: 20px; background-color: darkred; color: black;}
 /* p.border-radius {position: fixed; border-radius: 0 0 20px 20px; background-color: darkred; color: black;} */
