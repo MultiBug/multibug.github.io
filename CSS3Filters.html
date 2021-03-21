@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en, ru">
 <head>
+    <meta name="description" content="Image Filter Editor">
+    <meta name="keywords" content="sololearn, filter editor">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <script src="CSS3Filter.js"></script>
+    <script type="text/javascript">
+        alert("Javacript подключен");
+    </script>
     <link rel="stylesheet" href="CSS3Filters.css">
     <meta charset="UTF-8">
     <title>CSS3 Images Filter Editor</title>
@@ -8,10 +15,60 @@
 <body>
 <div id="img"></div>
 <div id="filter">
-    Blur: <span id="percent1">0px</span><br/>
-    <input id="blur" oninput="filtering()" type="range" value="0" min="0" max="100"><br/>
-    Hue: <span id="percent6">0deg</span><br/>
-    <input id="hue" oninput="filtering()" type="range" >
+    Blur: <span id="percent1">0px</span><br>
+    <input id="blur" oninput="filtering()"
+           type="range" value="0"
+           min="0" max="50"><br>
+    Brightness: <span id="percent2">100%</span><br>
+    <input id="brightness" oninput="filtering()"
+           type="range" value="100"
+           min="0" max="500"><br>
+    Contrast: <span id="percent3">100%</span><br>
+    <input id="contrast" oninput="filtering()"
+           type="range" value="100"
+           min="0" max="500"><br>
+    Shadow<br>
+    <div id="shadow">
+        Horizontal Position: <span id="percent4-1">0px</span><br>
+        <input id="x-shadow" oninput="filtering()"
+               type="number" value="0"
+               min="0" max="200"><br>
+        Vertical Position: <span id="percent4-2">0px</span><br>
+        <input id="y-shadow" oninput="filtering()"
+               type="number" value="0"
+               min="0" max="200"><br>
+        Shadow Spread: <span id="percent4-3">0px</span><br>
+        <input id="spread" oninput="filtering()"
+               type="number" value="0"
+               min="0" max="200"><br>
+        Shadow Color: <span id="percent4-4">#000000</span><br>
+        <input id="color" oninput="filtering()"
+               type="color" value="0"><br>
+    </div>
+    Grayscale: <span id="percent5">0%</span><br>
+    <input id="grayscale" oninput="filtering()"
+           type="range" value="0"
+           min="0" max="100"><br>
+    Hue: <span id="percent6">0deg</span><br>
+    <input id="hue" oninput="filtering()"
+           type="range" value="0"
+           min="0" max="360"><br>
+    Invert: <span id="percent7">0%</span><br>
+    <input id="invert" oninput="filtering()"
+           type="range" value="0"
+           min="0" max="100"><br>
+    Opacity: <span id="percent8">100%</span><br>
+    <input id="opacity" oninput="filtering()"
+           type="range" value="100"
+           min="0" max="100"><br>
+    Saturate: <span id="percent9">0%</span><br>
+    <input id="saturate" oninput="filtering()"
+           type="range" value="100"
+           min="0" max="500"><br>
+    Sepia: <span id="percent0">0%</span><br>
+    <input id="sepia" oninput="filtering()"
+           type="range" value="0"
+           min="0" max="100">
 </div>
 </body>
 </html>
