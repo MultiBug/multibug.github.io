@@ -16,7 +16,7 @@ linear - постоянная скорость прохождения анима
 Если не определена функция, то значением по умолчанию является ease.
 rotate() - вращает элемент по или против часовой стрелки, в соответствии с заданным градусом
 Отрицательные значения приведут к вращению против часовой стрелки
-Свойство trandform-origin позволяет изменять позицию трансформируемого элемента.
+Свойство transform-origin позволяет изменять позицию трансформируемого элемента.
 Значением по умолчанию является 50% 50%, что соответствует центру элемента
 0 0 это тоже самое что и top left, 100% 100% это bottom right
 transform-origin используется с transform
@@ -25,7 +25,7 @@ skew() - наклоняет элемент
 scale() - увеличивает или уменьшает размер элемента
  */
 body {
-    background-color: #E6FF00; font-style: italic;
+    background-color: #E6FF00; font-style: italic; text-align: center;
 }
 #tcube {
     width: 50px; height: 50px;
@@ -35,9 +35,19 @@ body {
 #tcube:hover {
     width: 300px;
 }
+h3 {
+    color: darkred; background-color: #00F318; border: 3px solid darkred; border-radius: 4px;
+    box-shadow: 1px 1px 5px 5px grey; display: inline-block;
+}
+h2 {
+    color:#FF0000;
+    text-align:center;
+    text-shadow:4px 5px 4px #00F318,
+    -2px -5px 8px #A2DC00;
+}
 h5 {
     width:300px; height:20px;
-    text-align:center; color:#00F318;
+    color:#00F318;
     margin: -10px 0 0 0;
     background:-moz-linear-gradient(120deg ,magenta,black,black,magenta);
 }
@@ -79,4 +89,101 @@ h5 {
     background:-moz-linear-gradient(120deg ,magenta,black,black,magenta);
     border:4px solid darkred;
     transform: skew(30deg);
+}
+#a-scale {
+    width: 200px; height: 100px; word-wrap: break-word;
+    background:-moz-linear-gradient(120deg ,magenta,black,black,magenta);
+    transform: scale(0.7, 0.7); color: white; border: 2px solid darkred;
+}
+#b-scale {
+    margin: 60px; width: 200px; height: 100px; word-wrap: break-word;
+    background:-moz-linear-gradient(120deg ,magenta,black,black,magenta);
+    transform: scale(1.5, 1.5); color: white; border: 2px solid darkred;
+}
+#miltiple-trans {
+    width:200px; height:70px; font-size:12px;
+    background:-moz-linear-gradient(120deg ,magenta,black,black,magenta);
+    color:white; margin:30px 0 20px 30px; border:4px dotted darkred;
+    transform:rotate(15deg) translate(30px) skew(310deg);
+}
+#keyframes {
+    width: 80px; height: 80px; border: 4px double darkred; border-radius: 10px;
+    margin: 20px 0 20px 40px;
+    background: cyan;
+    animation-name: colorchange; animation-delay: 3000ms;
+    animation-iteration-count: infinite; animation-duration: 3s;
+    animation-timing-function: ease-out;
+}
+@keyframes colorchange {
+    0% {background-color: #E6FF00}
+    40% {background-color: #00F318}
+    70% {background-color: darkred}
+    100% {background-color: magenta}
+}
+#rect1 {
+    width: 200px; height: 100px; margin: 30px 0 30px 50px; border: 4px dotted darkred;
+    background-color: cyan; position: absolute;
+    transform: rotate(10deg) skew(-30deg); animation-name: darkcolors;
+    animation-duration: 4s; animation-timing-function: linear;
+    animation-delay: 3000ms; animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+@keyframes darkcolors {
+    start{background-color: darkred;}
+    20% {background-color: purple;}
+    40% {background-color: #E6FF00;}
+    60% {background-color: #9600B4;}
+    80% {background-color: deeppink;}
+    to {background-color: black;}
+}
+#rect2 {
+    width: 150px;height: 60px; margin: 50px 0 50px 74px; border: 4px dotted darkred;
+    background-color: greenyellow; position: relative; transform: rotate(-5deg) skew(30deg);
+    animation: Lightcolors 1s linear 1s infinite /*iteration-count*/ alternate;
+}
+@keyframes Lightcolors {
+    0% {background-color: #E6FF00}
+    20% {background-color: #00F318}
+    40% {background-color: #21F0B2}
+    60% {background-color: orange}
+    80% {background-color: purple}
+    100% {background-color: lightblue}
+}
+#rx{
+    width:340px; height:100px; border:4px dashed darkred; color:darkred; background-color:cyan;
+    transform:rotateX(1deg); transition:transform 2s ease-in; text-align: center;
+}
+#rx:hover{
+    transform:rotateX(724deg);
+}
+#ry {
+    width:340px; height:100px; border:4px dashed darkred; color:darkred; background-color:cyan;
+    transform:rotateY(1deg); transition:transform 2s ease-in; text-align: center;
+}
+#ry:hover {
+    transform: rotateY(724deg);
+}
+#rz {
+    width:340px; height:100px; border:4px dashed darkred; color:darkred; background-color:cyan;
+    transform:rotateZ(1deg); transition:transform 2s ease-in; text-align: center;
+}
+#rz:hover {
+    transform: rotateZ(1890deg);
+}
+#ts1 {
+    width: 300px; height: 100px; background-color: #9600B4; color: darkred;
+    margin: -10px 0 0 0; border: 3px solid darkred;
+    transform: translateX(30px) translateY(2em) translateZ(-13px);
+    transition: transform 4s ease-in;
+}
+#ts1:hover {
+    transform: translateX(130px) translateY(200em) translateZ(-100px);
+}
+#ts2 {
+    width: 300px; height: 100px; background-color: #9600B4; color: darkred;
+    border: 4px solid darkred; transform: translate3d(30px, 2em, 15px);
+    transition: transform 4s ease-in;
+}
+#ts2:hover {
+    transform: translate3d(200px, -2200px, 335px);
 }
