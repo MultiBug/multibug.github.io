@@ -1,0 +1,14 @@
+#img {
+    background: blue url("1234.jpeg"); display: block; height: 225px; width: 225px;
+}
+#filter {
+    background: #eee; border: 2px solid #198ae4; height: 100%; margin: 10px auto 0;
+    padding: 20px; width: calc(100% - 46px);
+}
+#shadow {
+    border: 2px solid #ee1280; height: 100%; margin: 0 auto 10px;
+    padding: 10px; width: calc(100% - 24px);
+}
+input {
+    margin: 0 auto; text-align: center; width: 100%;
+}

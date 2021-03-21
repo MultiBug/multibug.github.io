@@ -3,9 +3,15 @@
 <head>
     <link rel="stylesheet" href="CSS3Filters.css">
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>CSS3 Images Filter Editor</title>
 </head>
 <body>
-
+<div id="img"></div>
+<div id="filter">
+    Blur: <span id="percent1">0px</span><br/>
+    <input id="blur" oninput="filtering()" type="range" value="0" min="0" max="100"><br/>
+    Hue: <span id="percent6">0deg</span><br/>
+    <input id="hue" oninput="filtering()" type="range" >
+</div>
 </body>
 </html>
