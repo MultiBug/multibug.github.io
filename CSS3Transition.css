@@ -187,3 +187,27 @@ h5 {
 #ts2:hover {
     transform: translate3d(200px, -2200px, 335px);
 }
+#container-div {
+    position: relative; vertical-align: middle; height: 180px; width: 200px;
+    margin: 30px; padding: 10px; perspective: 100px;
+    -moz-perspective: 100px;
+}
+#spinning-div {
+    color: darkred; text-align: center; text-shadow: 2px 2px 3px rgba(99, 99, 99, 0.4);
+    padding: 60px; position: absolute; background: rgba(99,99,99,0.2);
+    border-top: 1px solid darkred; border-left: darkred; border-bottom: darkred;
+    border-right: darkred; animation-name: platinum; box-shadow: 2px 2px 30px #888888;
+    animation-duration: 5s; animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes platinum {
+    from{transform: rotateX(0deg);}
+    50%{transform: rotateX(180deg);
+        box-shadow: 2px -2px 30px #888888;
+        text-shadow: 2px -2px 3px rgba(99,99,99,0.4);
+        border-bottom: 1px solid darkred;
+        border-left: 1px solid darkred;
+        border-top: 1px solid darkred;
+        border-right: 1px solid darkred;}
+    to {transform: rotateX(359deg);}
+}
